@@ -1,4 +1,3 @@
-
 import { Candidate } from '../positions';
 
 export const zamboangaHouseRepFirstCandidates: Candidate[] = [
@@ -17,12 +16,11 @@ export const zamboangaHouseRepSecondCandidates: Candidate[] = [
 ];
 
 export const zamboangaMayorCandidates: Candidate[] = [
-  { id: "zambo-m1", name: "ANNI, LAYLA", party: "IND" },
-  { id: "zambo-m2", name: "DALIPE, MANNIX", party: "LAKAS" },
-  { id: "zambo-m3", name: "IBBAH, DENNIER", party: "IND" },
-  { id: "zambo-m4", name: "NATIVIDAD, SIR PETE", party: "IND" },
-  { id: "zambo-m5", name: "NEGRETE, ORLANDO", party: "IND" },
-  { id: "zambo-m6", name: "OLASO, KHYMER ADAN", party: "NP" },
+  { id: "zambo-m1", name: "DALIPE, MANNIX", party: "LAKAS" },
+  { id: "zambo-m2", name: "IBBAH, DENNIER", party: "IND" },
+  { id: "zambo-m3", name: "NATIVIDAD, SIR PETE", party: "IND" },
+  { id: "zambo-m4", name: "NEGRETE, ORLANDO", party: "IND" },
+  { id: "zambo-m5", name: "OLASO, KHYMER ADAN", party: "NP" },
 ];
 
 export const zamboangaViceMayorCandidates: Candidate[] = [
