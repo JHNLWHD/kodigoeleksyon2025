@@ -40,7 +40,7 @@ const CandidateSummaryModal: React.FC<CandidateSummaryModalProps> = ({
   if (!isOpen || !candidate) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm animate-fade-in print:hidden overflow-y-auto p-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fade-in print:hidden overflow-y-auto p-4">
       <div 
         className="bg-white rounded-lg shadow-xl w-full max-w-md mx-4 animate-scale-in my-8"
         role="dialog"
