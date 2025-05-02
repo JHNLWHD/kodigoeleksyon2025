@@ -101,6 +101,7 @@ const CandidateSummaryModal: React.FC<CandidateSummaryModalProps> = ({
         <div className="p-4 border-t bg-gray-50 rounded-b-lg">
           <p className="text-xs text-gray-500 text-center">
             This information is provided for educational purposes only. 
+            Candidate data sourced from <a href="https://ph.rappler.com/elections/2025/senatorial-race?utm_source=kodigoeleksyon2025" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Rappler</a> and other public sources.
             For official candidate information, please refer to COMELEC resources.
           </p>
         </div>
