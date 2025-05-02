@@ -17,6 +17,7 @@ export interface Candidate {
   bio?: string; // Candidate biography/background
   platform?: string; // Candidate platform/advocacies
   achievements?: string; // Candidate achievements
+  profileUrl?: string; // URL to candidate's profile page
 }
 
 export interface Position {

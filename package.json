@@ -8,7 +8,12 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "compile-scripts": "tsc --project tsconfig.scripts.json",
+    "check-env": "tsx src/scripts/check-env.ts",
+    "scrape": "tsx src/scripts/scrape.ts",
+    "scrape:abalos": "tsx src/scripts/scrape.ts --name \"ABALOS, BENHUR\"",
+    "scrape:all": "tsx src/scripts/scrape.ts --all"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -49,6 +54,7 @@
     "input-otp": "^1.2.4",
     "lucide-react": "^0.462.0",
     "next-themes": "^0.3.0",
+    "playwright": "^1.52.0",
     "posthog-js": "^1.231.0",
     "react": "^18.3.1",
     "react-day-picker": "^8.10.1",
@@ -80,6 +86,8 @@
     "lovable-tagger": "^1.1.7",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.11",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.4",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1"

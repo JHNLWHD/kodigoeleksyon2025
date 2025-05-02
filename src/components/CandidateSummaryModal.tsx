@@ -40,9 +40,9 @@ const CandidateSummaryModal: React.FC<CandidateSummaryModalProps> = ({
   if (!isOpen || !candidate) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm animate-fade-in print:hidden">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm animate-fade-in print:hidden overflow-y-auto p-4">
       <div 
-        className="bg-white rounded-lg shadow-xl w-full max-w-md mx-4 animate-scale-in"
+        className="bg-white rounded-lg shadow-xl w-full max-w-md mx-4 animate-scale-in my-8"
         role="dialog"
         aria-modal="true"
         aria-labelledby="candidate-summary-title"
@@ -63,7 +63,7 @@ const CandidateSummaryModal: React.FC<CandidateSummaryModalProps> = ({
           </button>
         </div>
         
-        <div className="p-4">
+        <div className="p-4 max-h-[60vh] overflow-y-auto">
           <div className="flex items-center mb-4">
             <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-3">
               <span className="font-medium text-primary text-xl">
@@ -78,7 +78,7 @@ const CandidateSummaryModal: React.FC<CandidateSummaryModalProps> = ({
           
           <div className="mb-4">
             <h4 className="font-medium text-gray-800 mb-1">Background</h4>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-gray-600 text-justify">
               {candidate.bio || "No detailed information available for this candidate."}
             </p>
           </div>
