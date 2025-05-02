@@ -24,6 +24,7 @@ const CandidateCard = ({
   index,
   onViewSummary
 }: CandidateCardProps) => {
+  const isNationalPage = window.location.pathname === '/national';
   
   const handleKeyDown = (e: KeyboardEvent<HTMLDivElement>) => {
     if (e.key === 'Enter' || e.key === ' ') {
@@ -84,7 +85,7 @@ const CandidateCard = ({
           </div>
         </div>
         
-        {showCandidateInfo && onViewSummary && (
+        {showCandidateInfo && isNationalPage && onViewSummary && (
           <button
             className="p-1 rounded-full hover:bg-gray-200 ml-1 text-gray-500 hover:text-gray-700 transition-colors"
             onClick={handleSummaryClick}
