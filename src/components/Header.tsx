@@ -46,6 +46,7 @@ export const Header = () => {
     { name: "TAGUIG CITY", path: "/taguig-city" },
     { name: "CAINTA, RIZAL", path: "/cainta-rizal" },
     { name: "TAYTAY, RIZAL", path: "/taytay-rizal" },
+    { name: "SAMAL, BATAAN", path: "/samal-bataan" },
     { name: "NATIONAL", path: "/national" },
   ];
 
@@ -148,6 +149,39 @@ export const Header = () => {
                   <NavigationMenuContent>
                     <ul className="grid grid-cols-1 w-[200px] gap-1 p-2">
                       {locations.slice(5, 7).map((loc) => (
+                        <li key={loc.path}>
+                          <NavigationMenuLink asChild>
+                            <Link
+                              to={loc.path}
+                              className={cn(
+                                "block px-3 py-2 text-sm font-medium rounded-md transition-colors",
+                                isActive(loc.path)
+                                  ? "bg-blue-50 text-blue-700"
+                                  : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+                              )}
+                              aria-current={isActive(loc.path) ? "page" : undefined}
+                            >
+                              {loc.name}
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className={cn(
+                    "px-3 text-sm font-medium rounded-md transition-colors",
+                    isActive("/samal-bataan") || isActive("/coming-bataan") 
+                      ? "bg-blue-50 text-blue-700"
+                      : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+                  )}>
+                    Bataan
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid grid-cols-1 w-[200px] gap-1 p-2">
+                      {locations.slice(7, 8).map((loc) => (
                         <li key={loc.path}>
                           <NavigationMenuLink asChild>
                             <Link
