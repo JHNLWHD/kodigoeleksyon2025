@@ -12,13 +12,13 @@
 This project was partly built using [Lovable](https://lovable.dev), a vibe coding platform.
 
 Currently supported locations:
-- Zamboanga City (main)
+- Cainta, Rizal
 - Cebu City
 - Makati City
-- Taguig City
-- Cainta, Rizal
-- Taytay, Rizal
 - National candidates only
+- Taguig City
+- Taytay, Rizal
+- Zamboanga City (main)
 
 ## Features
 
